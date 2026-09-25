@@ -1,0 +1,432 @@
+<!-- index.html (updated) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImpactHub — Transform Community Problems Into Real-World Solutions</title>
+  <meta name="description" content="ImpactHub connects citizens and NGOs reporting real societal challenges with students, researchers, mentors, universities, and industry partners who build the solutions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <rect width="24" height="24" rx="7" fill="#F95C4B"></rect>
+          <path d="M8 16 16 8M16 8H10M16 8V14" stroke="#F6F4F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+        </svg>
+      </span>
+      <span class="logo-text">ImpactHub</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#challenges" class="nav-link">Challenges</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- UPDATED: now links to login.html -->
+      <a class="btn-signin" href="login.html">Sign In</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="floating-shape shape-1"></span>
+        <span class="floating-shape shape-2"></span>
+        <span class="floating-shape shape-3"></span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Transform Community Problems Into Real-World Solutions</h1>
+          <p class="hero-sub">ImpactHub helps citizens, students, universities, researchers, mentors, and industry partners collaborate to solve real societal challenges.</p>
+          <div class="hero-buttons">
+            <!-- UPDATED: now links to report-problem.html -->
+            <a class="btn btn-primary" href="report-problem.html">Report a Problem</a>
+            <!-- UPDATED: now links to problems.html -->
+            <a class="btn btn-secondary" href="problems.html">Explore Challenges</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="connector" viewBox="0 0 320 380" preserveAspectRatio="none">
+            <path d="M70 90 C 160 150, 160 220, 250 300"></path>
+          </svg>
+
+          <div class="visual-card visual-card--reported">
+            <span class="visual-tag">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
+              Reported
+            </span>
+            <p class="visual-title">Street Lights Not Working</p>
+            <div class="visual-meta">
+              <span>Gorakhpur</span>
+              <span>235 votes</span>
+            </div>
+          </div>
+
+          <div class="visual-badge">42 active projects</div>
+
+          <div class="visual-card visual-card--solution">
+            <span class="visual-tag">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="m8 12.5 2.5 2.5L16 9.5"></path></svg>
+              Deployed
+            </span>
+            <p class="visual-title">Smart LED Lighting Pilot</p>
+            <div class="visual-meta">
+              <span>120 sites</span>
+              <span>Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How It Works</h2>
+          <p>From a reported problem to a deployed solution, in four steps.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <span class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
+            </span>
+            <h3 class="step-title">Report</h3>
+            <p class="step-desc">Citizens and NGOs submit real problems in their community — from broken infrastructure to public health gaps — with photos, location, and context.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <span class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13M10 20V8M16 20V11M22 20V4"></path></svg>
+            </span>
+            <h3 class="step-title">Prioritize</h3>
+            <p class="step-desc">The community votes and comments to surface the challenges that matter most, while moderators verify authenticity and urgency.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <span class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="4"></circle><circle cx="15" cy="15" r="4"></circle></svg>
+            </span>
+            <h3 class="step-title">Collaborate</h3>
+            <p class="step-desc">Students, researchers, mentors, and industry partners team up on the highest-priority problems to design workable solutions.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">04</span>
+            <span class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0-12 4 4m-4-4-4 4"></path><path d="M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path></svg>
+            </span>
+            <h3 class="step-title">Deploy</h3>
+            <p class="step-desc">Vetted solutions move from prototype to pilot, with funding and institutional support to reach the people who reported them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-heading section-heading--left">
+          <h2>Built for every collaborator</h2>
+          <p>Each role on ImpactHub gets tools suited to the part they play in turning a report into a result.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
+            </span>
+            <h3 class="feature-title">Problem Reporting</h3>
+            <p class="feature-desc">Submit a challenge in minutes with photos, location tagging, and a clear description — no bureaucracy required.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 16V8m0 0-3.5 3.5M12 8l3.5 3.5"></path></svg>
+            </span>
+            <h3 class="feature-title">Community Voting</h3>
+            <p class="feature-desc">Upvotes and comments surface the problems your neighborhood actually wants solved first.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15 15 9"></path><path d="M11 6.5 12.5 5A4 4 0 1 1 18 10.5L16.5 12"></path><path d="M13 17.5 11.5 19A4 4 0 1 1 6 13.5L7.5 12"></path></svg>
+            </span>
+            <h3 class="feature-title">Smart Matching</h3>
+            <p class="feature-desc">An algorithm pairs each challenge with the students, mentors, and partners best equipped to solve it.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5L2 9Z"></path><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"></path></svg>
+            </span>
+            <h3 class="feature-title">Student Collaboration</h3>
+            <p class="feature-desc">Teams form around real briefs, with mentor guidance and academic credit built into the workflow.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"></rect><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg>
+            </span>
+            <h3 class="feature-title">Industry Sponsorship</h3>
+            <p class="feature-desc">Companies fund pilots, offer technical resources, and adopt solutions that are ready to scale.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="m8 12.5 2.5 2.5L16 9.5"></path></svg>
+            </span>
+            <h3 class="feature-title">Solution Deployment</h3>
+            <p class="feature-desc">Track a project from prototype to public rollout, with outcomes reported back to the community that raised it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-stats" id="impact">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <p class="stat-number-row"><span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span></p>
+            <p class="stat-label">Problems Reported</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number-row"><span class="stat-number" data-target="2500">0</span><span class="stat-suffix">+</span></p>
+            <p class="stat-label">Students</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number-row"><span class="stat-number" data-target="450">0</span><span class="stat-suffix">+</span></p>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number-row"><span class="stat-number" data-target="120">0</span><span class="stat-suffix">+</span></p>
+            <p class="stat-label">Solutions Deployed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-feed" id="challenges">
+      <div class="container">
+        <div class="section-heading section-heading--left">
+          <h2>Challenges near you</h2>
+          <p>A live sample of what's being reported and voted on right now.</p>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <span class="challenge-tag">Infrastructure</span>
+            <h3 class="challenge-title">Street Lights Not Working</h3>
+            <div class="challenge-meta">
+              <span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.2"></circle></svg>
+                Gorakhpur
+              </span>
+            </div>
+            <div class="challenge-footer">
+              <span class="vote-count">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 5 4 17h16L12 5z"></path></svg>
+                235 votes
+              </span>
+              <button class="btn-view" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-tag">Public Health</span>
+            <h3 class="challenge-title">Contaminated Groundwater Near Ward 12</h3>
+            <div class="challenge-meta">
+              <span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.2"></circle></svg>
+                Lucknow
+              </span>
+            </div>
+            <div class="challenge-footer">
+              <span class="vote-count">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 5 4 17h16L12 5z"></path></svg>
+                412 votes
+              </span>
+              <button class="btn-view" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-tag">Accessibility</span>
+            <h3 class="challenge-title">No Wheelchair Access at City Hospital</h3>
+            <div class="challenge-meta">
+              <span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.2"></circle></svg>
+                Varanasi
+              </span>
+            </div>
+            <div class="challenge-footer">
+              <span class="vote-count">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 5 4 17h16L12 5z"></path></svg>
+                189 votes
+              </span>
+              <button class="btn-view" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-tag">Sanitation</span>
+            <h3 class="challenge-title">Overflowing Drains During Monsoon</h3>
+            <div class="challenge-meta">
+              <span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"></path><circle cx="12" cy="9" r="2.2"></circle></svg>
+                Patna
+              </span>
+            </div>
+            <div class="challenge-footer">
+              <span class="vote-count">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 5 4 17h16L12 5z"></path></svg>
+                301 votes
+              </span>
+              <button class="btn-view" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Impact on three fronts</h2>
+          <p>Every solved challenge pays off for the community, the people who build it, and the local economy.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-col">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"></path></svg>
+            </span>
+            <h3 class="benefit-title">Social Impact</h3>
+            <ul class="benefit-list">
+              <li>Solves real societal challenges</li>
+              <li>Community participation</li>
+              <li>Better public engagement</li>
+            </ul>
+          </div>
+
+          <div class="benefit-col">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5L2 9Z"></path><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"></path></svg>
+            </span>
+            <h3 class="benefit-title">Educational Impact</h3>
+            <ul class="benefit-list">
+              <li>Real-world learning</li>
+              <li>Student innovation</li>
+              <li>Industry exposure</li>
+            </ul>
+          </div>
+
+          <div class="benefit-col">
+            <span class="benefit-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13M10 20V8M16 20V11M22 20V4"></path></svg>
+            </span>
+            <h3 class="benefit-title">Economic Impact</h3>
+            <ul class="benefit-list">
+              <li>Entrepreneurship</li>
+              <li>Funding opportunities</li>
+              <li>Scalable innovation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What collaborators say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">I built my final-year project around a real flooding complaint instead of a hypothetical case study. Six months later, the drainage redesign we proposed is actually being piloted.</p>
+            <div class="testimonial-author">
+              <span class="author-avatar">AR</span>
+              <div class="author-info">
+                <p class="author-name">Ananya Rao</p>
+                <p class="author-role">Civil Engineering Student</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">We'd reported the broken streetlights on our lane for two years with no result. Posting it here got it in front of a student team in under a month, and the lights are back on.</p>
+            <div class="testimonial-author">
+              <span class="author-avatar">SK</span>
+              <div class="author-info">
+                <p class="author-name">Suresh Kumar</p>
+                <p class="author-role">Resident, Ward 12</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">We came in expecting a CSR checkbox and left with a genuine pipeline of vetted, field-tested pilots worth funding. It's the best sourcing channel we've found.</p>
+            <div class="testimonial-author">
+              <span class="author-avatar">PM</span>
+              <div class="author-info">
+                <p class="author-name">Priya Menon</p>
+                <p class="author-role">Partnerships Lead, industry sponsor</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Create Real Impact?</h2>
+          <button class="btn btn-primary" type="button">Join ImpactHub Today</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span class="footer-logo">ImpactHub</span>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="footer-bottom">© 2026 ImpactHub. Built to turn reports into results.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

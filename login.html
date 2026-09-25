@@ -1,0 +1,84 @@
+<!-- login.html (new) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — ImpactHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <rect width="24" height="24" rx="7" fill="#F95C4B"></rect>
+          <path d="M8 16 16 8M16 8H10M16 8V14" stroke="#F6F4F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+        </svg>
+      </span>
+      <span class="logo-text">ImpactHub</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#challenges" class="nav-link">Challenges</a></li>
+        <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="index.html#impact" class="nav-link">Impact</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a class="btn-signin" href="login.html">Sign In</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="auth-section">
+      <div class="auth-card">
+        <h2>Welcome back</h2>
+        <p class="auth-sub">Sign in to keep tracking the challenges you care about.</p>
+
+        <form class="auth-form" id="loginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email</label>
+            <input class="form-input" type="email" id="loginEmail" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="loginPassword">Password</label>
+            <input class="form-input" type="password" id="loginPassword" name="password" placeholder="••••••••" required />
+          </div>
+          <button class="btn btn-primary" type="submit">Login</button>
+          <p class="form-note" id="loginNote">Signed in — welcome back! (Demo only, no backend yet.)</p>
+        </form>
+
+        <p class="auth-switch">Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span class="footer-logo">ImpactHub</span>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#challenges">Challenges</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="index.html#impact">Impact</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="footer-bottom">© 2026 ImpactHub. Built to turn reports into results.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
